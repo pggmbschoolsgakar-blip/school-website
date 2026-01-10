@@ -1,344 +1,141 @@
-/* ===== General Styles ===== */
+/* ===== General Reset ===== */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
-/* ===== Header ===== */
-header {
-  background-color: #006400; /* Dark Green */
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header .logo {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #FFD700; /* Yellow hover */
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  background-color: #e6ffe6; /* Light Green */
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #B22222; /* Red heading */
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.hero .banner {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-}
-
-/* ===== Section Styling ===== */
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #B22222; /* Red headings */
-}
-
-section p, section ul {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-section ul {
-  list-style-type: disc;
-  margin: 10px auto;
-  padding-left: 20px;
-  text-align: left;
-  max-width: 600px;
-}
-
-/* ===== About & Academics Preview Cards ===== */
-.about-preview, .academics-preview {
-  background-color: #ffffff;
-  padding: 30px 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-.about-preview a, .academics-preview a {
-  color: #006400; /* Green links */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.about-preview a:hover, .academics-preview a:hover {
-  color: #FFD700; /* Yellow hover */
-}
-
-/* ===== Gallery ===== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== Buttons ===== */
-button, .btn {
-  background-color: #FFD700; /* Yellow */
-  color: #000000; /* Black text */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-button:hover, .btn:hover {
-  background-color: #B22222; /* Red hover */
-  color: #ffffff;
-}
-
-/* ===== Footer ===== */
-footer {
-  background-color: #000000; /* Black footer */
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 0.9rem;
-}
-
-/* ===== Contact Section ===== */
-iframe {
-  border: 0;
-  width: 100%;
-  max-width: 800px;
-  height: 300px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  section {
-    padding: 30px 15px;
-  }
-
-  .hero h2 {
-    font-size: 1rem;
-/* Logo styling */
-.logo-container {
-    text-align: center;  /* Centers the logo horizontally */
-    margin: 20px 0;      /* Space above and below the logo */
-}
-
-.logo {
-    width: 150px;        /* Adjust the size as needed */
-    height: auto;        /* Keeps the aspect ratio */
-}
-/* Hero / Cover */
-.hero {
-  background-image: url('images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 120px 0;
-  text-align: center;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 25px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-buttons .btn {
-  margin: 10px 15px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background-color: #0b6623;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #094d1a;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid white;
-}
-
-.btn-outline:hover {
-  background-color: #fff;
-  color: #0b6623;
-}
-
-.hero-info-cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.info-card {
-  text-align: center;
-  font-size: 1.15rem;
-  background: rgba(255,255,255,0.2);
-  padding: 15px 25px;
-  border-radius: 8px;
-}
-
-.info-icon {
-  font-size: 1.8rem;
-  display: block;
-  margin-bottom: 8px;
-}
-/* Logo */
+/* ===== Logo ===== */
 .logo-container {
     text-align: center;
     margin: 20px 0;
 }
 .logo {
-    width: 150px;
+    width: 130px; /* Adjust size */
     height: auto;
+    display: block;
 }
 
-/* Hero */
+/* ===== Navbar ===== */
+nav {
+    background-color: #000; /* black navbar */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #FFD700; /* yellow on hover */
+}
+nav a.active {
+    background-color: #4CAF50; /* green active page */
+    border-radius: 5px;
+}
+
+/* ===== Hero Section ===== */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
     background-color: #f5f5f5;
 }
 .hero h1 {
     font-size: 2.8rem;
-    margin-bottom: 10px;
+    color: #4CAF50; /* green */
+    margin-bottom: 15px;
 }
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 25px;
 }
 .btn-primary {
-    background: #4CAF50; /* green */
-    color: white;
-    padding: 12px 24px;
+    background-color: #4CAF50; /* green */
+    color: #fff;
     text-decoration: none;
+    padding: 12px 28px;
     border-radius: 5px;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #45a049; /* darker green */
 }
 
-/* Highlights */
+/* ===== Highlights Section ===== */
 .highlights {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
-    padding: 30px;
+    padding: 40px 20px;
+    background-color: #fff;
 }
 .highlight-card {
     width: 280px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 25px 15px;
     text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.highlight-card h2 {
+    color: #000;
+    margin-bottom: 10px;
+}
+.highlight-card p {
+    color: #555;
+    margin-bottom: 15px;
 }
 .btn-secondary {
     display: inline-block;
-    margin-top: 10px;
-    background: #000;
-    color: white;
-    padding: 8px 20px;
+    background-color: #000; /* black */
+    color: #fff;
     text-decoration: none;
+    padding: 8px 20px;
     border-radius: 5px;
+    font-weight: bold;
+}
+.btn-secondary:hover {
+    background-color: #FF0000; /* red hover */
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     text-align: center;
-    margin-top: 40px;
-    padding: 15px;
-    background: #000;
-    color: white;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
     font-size: 0.9rem;
 }
 
-
-
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}
