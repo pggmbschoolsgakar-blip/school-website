@@ -201,4 +201,77 @@ iframe {
     width: 150px;        /* Adjust the size as needed */
     height: auto;        /* Keeps the aspect ratio */
 }
+/* Hero / Cover */
+.hero {
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons .btn {
+  margin: 10px 15px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #0b6623;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #094d1a;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #0b6623;
+}
+
+.hero-info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.info-card {
+  text-align: center;
+  font-size: 1.15rem;
+  background: rgba(255,255,255,0.2);
+  padding: 15px 25px;
+  border-radius: 8px;
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
 
