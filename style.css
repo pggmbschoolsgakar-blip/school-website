@@ -191,3 +191,14 @@ iframe {
 
   .hero h2 {
     font-size: 1rem;
+/* Logo styling */
+.logo-container {
+    text-align: center;  /* Centers the logo horizontally */
+    margin: 20px 0;      /* Space above and below the logo */
+}
+
+.logo {
+    width: 150px;        /* Adjust the size as needed */
+    height: auto;        /* Keeps the aspect ratio */
+}
+
