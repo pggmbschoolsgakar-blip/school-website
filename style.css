@@ -1,189 +1,118 @@
-/* ===== General Reset ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  background: #f5fff2;
+  color: #222;
 }
 
-/* ===== Logo ===== */
-.logo-container {
-    text-align: center;
-    margin: 20px 0;
-}
-.logo {
-    width: 130px; /* Adjust size */
-    height: auto;
-    display: block;
+/* Header */
+.school-header {
+  background: linear-gradient(90deg, #0a7a33, #f5c400);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #c60000;
 }
 
-/* ===== Navbar ===== */
-nav {
-    background-color: #000; /* black navbar */
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 12px 0;
-    flex-wrap: wrap;
-}
-nav li {
-    margin: 0 15px;
-}
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 8px 15px;
-    transition: 0.3s;
-}
-nav a:hover {
-    color: #FFD700; /* yellow on hover */
-}
-nav a.active {
-    background-color: #4CAF50; /* green active page */
-    border-radius: 5px;
+.school-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #f5f5f5;
-}
-.hero h1 {
-    font-size: 2.8rem;
-    color: #4CAF50; /* green */
-    margin-bottom: 15px;
-}
-.hero p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 25px;
-}
-.btn-primary {
-    background-color: #4CAF50; /* green */
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.btn-primary:hover {
-    background-color: #45a049; /* darker green */
+.school-header p {
+  margin: 8px 0 0;
+  font-size: 1rem;
 }
 
-/* ===== Highlights Section ===== */
-.highlights {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    background-color: #fff;
-}
-.highlight-card {
-    width: 280px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 25px 15px;
-    text-align: center;
-    background-color: #f9f9f9;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.highlight-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.highlight-card h2 {
-    color: #000;
-    margin-bottom: 10px;
-}
-.highlight-card p {
-    color: #555;
-    margin-bottom: 15px;
-}
-.btn-secondary {
-    display: inline-block;
-    background-color: #000; /* black */
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-.btn-secondary:hover {
-    background-color: #FF0000; /* red hover */
+/* Navigation */
+.main-nav {
+  background: #0a7a33;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* ===== Footer ===== */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-    font-size: 0.9rem;
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: bold;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-    .highlights {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav li {
-        margin: 10px 0;
-    }
-}/* Page Header */
-.page-header {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f5f5f5;
-}
-.page-header h1 {
-    font-size: 2.5rem;
-    color: #4CAF50; /* green */
-    margin-bottom: 10px;
-}
-.page-header p {
-    font-size: 1.1rem;
-    color: #333;
+.main-nav a:hover {
+  background: #f5c400;
+  color: black;
 }
 
-/* Sections */
-main section {
-    padding: 30px 20px;
-    max-width: 900px;
-    margin: 0 auto;
+/* Main content */
+.content {
+  padding: 25px;
+  max-width: 1000px;
+  margin: auto;
 }
-main section h2 {
-    color: #000;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+
+.content h2 {
+  color: #0a7a33;
+  font-size: 2rem;
+  border-left: 8px solid #f5c400;
+  padding-left: 10px;
 }
-main section p, main section ul {
-    color: #555;
-    margin-bottom: 15px;
+
+.content h3 {
+  color: #c60000;
 }
-main section ul {
-    padding-left: 20px;
-    list-style: disc;
+
+.home-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
-<ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Us</a></li>
-  <li><a href="academics.html">Academics</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
 
+.box {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  border: 3px solid #f5c400;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
 
+.box:hover {
+  transform: scale(1.05);
+}
 
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
 
+.gallery-box {
+  background: #f5c400;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  border: 3px dashed #0a7a33;
+}
 
+/* Contact */
+.contact-box {
+  background: #e8ffe0;
+  border: 3px solid #0a7a33;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 400px;
+}
 
-
+/* Footer */
+.site-footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+}
